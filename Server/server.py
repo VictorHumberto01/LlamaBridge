@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import requests
 
 app = Flask(__name__)
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16 MB
 
 EXTERNAL_API_URL = "http://localhost:11434/api/generate"
 
