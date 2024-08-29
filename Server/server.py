@@ -49,3 +49,9 @@ def generate():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
+
+    # To send requests to server use "curl -X POST http://server_ip:5000/generate -H "Content-Type: application/json" -d '{"session_id": "user1", "prompt": "Replace with prompt"}'""
+    # Have to look for the availability of the port used by the flask server
+    # The session_id is the number atributed to the session so the server can make the model remember the conversation
+    # This probably will be moved for the client side to improve privacy
