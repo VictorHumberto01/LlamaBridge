@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 EXTERNAL_API_URL = "http://localhost:11434/api/generate"
 
-def run_ollama(prompt, model="llama3"):
+def run_ollama(prompt, model="llama3.1"):
     payload = {
         "model": model,
         "prompt": prompt,
