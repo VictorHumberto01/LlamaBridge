@@ -2,7 +2,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # Set the model name
-model_name = "meta-llama/Llama-3b-hf"  # Example model, replace with LLaMA 3.1 if available
+model_name = "meta-llama/Llama-3.1-8B"  # Example model, replace with LLaMA 3.1 when available 
 
 # Load the model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -15,7 +15,7 @@ model = AutoModelForCausalLM.from_pretrained(
 # Enable gradient checkpointing to reduce memory usage
 model.gradient_checkpointing_enable()
 
-# Define the input text
+# Define the input text. This will be replaced when connected to flask
 input_text = "How are you doing?"
 
 # Tokenize the input text and create an attention mask
