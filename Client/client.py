@@ -1,35 +1,42 @@
 import requests
 import json
+import os
 
-# Simple client to test encryption and functions of the server-side script
+# Load conversations from a file
+def load_conversations(filename='conversations.json'):
+    if os.path.exists(filename):
+        with open(filename, 'r') as file:
+            return json.load(file)
+    else:
+        return {}
 
-def check_stored_info():
-    try:
-        with open('data.json', 'r') as file:
-            dataload = json.load(file)
-            if "Stored" in dataload and dataload["Stored"] == "True":
-                print("Success")
-                return dataload.get("server_ip")  # Return server IP if stored
-            else:
-                print("No information stored yet, please provide when asked")
-                return None
-    except FileNotFoundError:
-        print("No information stored yet, please provide when asked")
-        return None
-    except json.JSONDecodeError:
-        print("Error reading JSON data from file")
-        return None
+# Save conversations to a file
+def save_conversations(conversations, filename='conversations.json'):
+    with open(filename, 'w') as file:
+        json.dump(conversations, file, indent=4)
 
-def get_server():
-    server_ip = input("Enter the server IP: ")
-    data = {
-        "server_ip": server_ip,
-        "Stored": "True"
-    }
+# Function to format the conversation history into a single string
+def format_conversation(conversation):
+    formatted = ""
+    for entry in conversation:
+        formatted += f"User: {entry['prompt']}\nAI: {entry['response']}\n"
+    return formatted
+
+# Add a new prompt-response pair to the conversation
+def add_to_conversation(session_id, prompt, response, filename='conversations.json'):
+    conversations = load_conversations(filename)
     
-    with open('data.json', 'w') as file:
-        json.dump(data, file, indent=4)
+    if session_id not in conversations:
+        conversations[session_id] = []
 
+    conversations[session_id].append({
+        "prompt": prompt,
+        "response": response
+    })
+
+    save_conversations(conversations, filename)
+
+# Send request to server
 def send_request(session_id, prompt, server_ip):
     url = f"http://{server_ip}:5000/generate"
     headers = {"Content-Type": "application/json"}
@@ -45,19 +52,52 @@ def send_request(session_id, prompt, server_ip):
         print("Error sending request:", str(e))
         return None
 
+# Main function to handle the conversation flow
 def main():
-    server_ip = check_stored_info()
-    
-    if not server_ip:
-        get_server()  # Prompt user to input server IP if not stored
-        server_ip = check_stored_info()  # Read the new server IP from the file
-
+    server_ip = input("Enter the server IP: ")
     session_id = input("Enter the session ID: ")
-    prompt = input("Enter the prompt: ")
-    
-    response = send_request(session_id, prompt, server_ip)
-    if response is not None:
-        print("Response from server:", json.dumps(response, indent=2))
+
+    # Load the current conversation history for the session
+    conversations = load_conversations()
+    conversation_history = conversations.get(session_id, [])
+
+    # Continuously prompt the user for input and send it to the server
+    while True:
+        prompt = input("Enter the prompt (type 'exit' to quit or 'change' to change session_id): ")
+        if prompt.lower() == 'exit':
+            break
+
+        if prompt.lower() == 'change':
+            # Save the current conversation history back to the conversations dictionary
+            conversations[session_id] = conversation_history
+            
+            session_id = input("Enter the new session ID: ")
+            conversation_history = conversations.get(session_id, [])
+            
+            # If the session ID does not exist, initialize it
+            if not conversation_history:
+                conversations[session_id] = []
+                conversation_history = conversations[session_id]
+
+        # Format the conversation history plus the new prompt
+        formatted_history = format_conversation(conversation_history)
+        full_prompt = f"{formatted_history}User: {prompt}\nAI:"
+
+        # Send the formatted history and new prompt to the server
+        response = send_request(session_id, full_prompt, server_ip)
+        
+        if response is not None:
+            response_text = response.get("response", "")
+            print("Response from server:", response_text)
+            
+            # Save the new prompt and response to the conversation history
+            add_to_conversation(session_id, prompt, response_text)
+            
+            # Update the conversation history in memory
+            conversation_history.append({
+                "prompt": prompt,
+                "response": response_text
+            })
 
 if __name__ == "__main__":
     main()
