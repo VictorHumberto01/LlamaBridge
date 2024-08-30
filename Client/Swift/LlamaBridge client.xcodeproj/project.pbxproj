@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		424327192C81796D00C808E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 424326FF2C81796C00C808E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 424327062C81796C00C808E7;
+			remoteInfo = "LlamaBridge client";
+		};
+		424327232C81796E00C808E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 424326FF2C81796C00C808E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 424327062C81796C00C808E7;
+			remoteInfo = "LlamaBridge client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		424327072C81796C00C808E7 /* LlamaBridge client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LlamaBridge client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		424327182C81796D00C808E7 /* LlamaBridge clientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LlamaBridge clientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		424327222C81796E00C808E7 /* LlamaBridge clientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LlamaBridge clientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		424327092C81796C00C808E7 /* LlamaBridge client */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "LlamaBridge client";
+			sourceTree = "<group>";
+		};
+		4243271B2C81796D00C808E7 /* LlamaBridge clientTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "LlamaBridge clientTests";
+			sourceTree = "<group>";
+		};
+		424327252C81796E00C808E7 /* LlamaBridge clientUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "LlamaBridge clientUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		424327042C81796C00C808E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		424327152C81796D00C808E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4243271F2C81796E00C808E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		424326FE2C81796C00C808E7 = {
+			isa = PBXGroup;
+			children = (
+				424327092C81796C00C808E7 /* LlamaBridge client */,
+				4243271B2C81796D00C808E7 /* LlamaBridge clientTests */,
+				424327252C81796E00C808E7 /* LlamaBridge clientUITests */,
+				424327082C81796C00C808E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		424327082C81796C00C808E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				424327072C81796C00C808E7 /* LlamaBridge client.app */,
+				424327182C81796D00C808E7 /* LlamaBridge clientTests.xctest */,
+				424327222C81796E00C808E7 /* LlamaBridge clientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		424327062C81796C00C808E7 /* LlamaBridge client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4243272C2C81796E00C808E7 /* Build configuration list for PBXNativeTarget "LlamaBridge client" */;
+			buildPhases = (
+				424327032C81796C00C808E7 /* Sources */,
+				424327042C81796C00C808E7 /* Frameworks */,
+				424327052C81796C00C808E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				424327092C81796C00C808E7 /* LlamaBridge client */,
+			);
+			name = "LlamaBridge client";
+			packageProductDependencies = (
+			);
+			productName = "LlamaBridge client";
+			productReference = 424327072C81796C00C808E7 /* LlamaBridge client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		424327172C81796D00C808E7 /* LlamaBridge clientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4243272F2C81796E00C808E7 /* Build configuration list for PBXNativeTarget "LlamaBridge clientTests" */;
+			buildPhases = (
+				424327142C81796D00C808E7 /* Sources */,
+				424327152C81796D00C808E7 /* Frameworks */,
+				424327162C81796D00C808E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4243271A2C81796D00C808E7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4243271B2C81796D00C808E7 /* LlamaBridge clientTests */,
+			);
+			name = "LlamaBridge clientTests";
+			packageProductDependencies = (
+			);
+			productName = "LlamaBridge clientTests";
+			productReference = 424327182C81796D00C808E7 /* LlamaBridge clientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		424327212C81796E00C808E7 /* LlamaBridge clientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 424327322C81796E00C808E7 /* Build configuration list for PBXNativeTarget "LlamaBridge clientUITests" */;
+			buildPhases = (
+				4243271E2C81796E00C808E7 /* Sources */,
+				4243271F2C81796E00C808E7 /* Frameworks */,
+				424327202C81796E00C808E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				424327242C81796E00C808E7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				424327252C81796E00C808E7 /* LlamaBridge clientUITests */,
+			);
+			name = "LlamaBridge clientUITests";
+			packageProductDependencies = (
+			);
+			productName = "LlamaBridge clientUITests";
+			productReference = 424327222C81796E00C808E7 /* LlamaBridge clientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		424326FF2C81796C00C808E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					424327062C81796C00C808E7 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					424327172C81796D00C808E7 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 424327062C81796C00C808E7;
+					};
+					424327212C81796E00C808E7 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 424327062C81796C00C808E7;
+					};
+				};
+			};
+			buildConfigurationList = 424327022C81796C00C808E7 /* Build configuration list for PBXProject "LlamaBridge client" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 424326FE2C81796C00C808E7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 424327082C81796C00C808E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				424327062C81796C00C808E7 /* LlamaBridge client */,
+				424327172C81796D00C808E7 /* LlamaBridge clientTests */,
+				424327212C81796E00C808E7 /* LlamaBridge clientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		424327052C81796C00C808E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		424327162C81796D00C808E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		424327202C81796E00C808E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		424327032C81796C00C808E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		424327142C81796D00C808E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4243271E2C81796E00C808E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4243271A2C81796D00C808E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 424327062C81796C00C808E7 /* LlamaBridge client */;
+			targetProxy = 424327192C81796D00C808E7 /* PBXContainerItemProxy */;
+		};
+		424327242C81796E00C808E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 424327062C81796C00C808E7 /* LlamaBridge client */;
+			targetProxy = 424327232C81796E00C808E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4243272A2C81796E00C808E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4243272B2C81796E00C808E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		4243272D2C81796E00C808E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LlamaBridge client/LlamaBridge_client.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LlamaBridge client/Preview Content\"";
+				DEVELOPMENT_TEAM = GK3BGXC3W6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.LlamaBridge-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4243272E2C81796E00C808E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "LlamaBridge client/LlamaBridge_client.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LlamaBridge client/Preview Content\"";
+				DEVELOPMENT_TEAM = GK3BGXC3W6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.LlamaBridge-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		424327302C81796E00C808E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GK3BGXC3W6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.LlamaBridge-clientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LlamaBridge client.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LlamaBridge client";
+			};
+			name = Debug;
+		};
+		424327312C81796E00C808E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GK3BGXC3W6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.LlamaBridge-clientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LlamaBridge client.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LlamaBridge client";
+			};
+			name = Release;
+		};
+		424327332C81796E00C808E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GK3BGXC3W6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.LlamaBridge-clientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "LlamaBridge client";
+			};
+			name = Debug;
+		};
+		424327342C81796E00C808E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GK3BGXC3W6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "test.LlamaBridge-clientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "LlamaBridge client";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		424327022C81796C00C808E7 /* Build configuration list for PBXProject "LlamaBridge client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4243272A2C81796E00C808E7 /* Debug */,
+				4243272B2C81796E00C808E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4243272C2C81796E00C808E7 /* Build configuration list for PBXNativeTarget "LlamaBridge client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4243272D2C81796E00C808E7 /* Debug */,
+				4243272E2C81796E00C808E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4243272F2C81796E00C808E7 /* Build configuration list for PBXNativeTarget "LlamaBridge clientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424327302C81796E00C808E7 /* Debug */,
+				424327312C81796E00C808E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		424327322C81796E00C808E7 /* Build configuration list for PBXNativeTarget "LlamaBridge clientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424327332C81796E00C808E7 /* Debug */,
+				424327342C81796E00C808E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 424326FF2C81796C00C808E7 /* Project object */;
+}
