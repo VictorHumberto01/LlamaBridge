@@ -1,8 +1,13 @@
-# LlamaBridge
+<p align="center">
+<img style="align:center;" src="https://github.com/vitub/LlamaBridge/blob/main/Resources/Icon.png" alt="LLamaBridge Logo" width="200" />
+</p>
+
+<h1 align="center">LlamaBridge</h1>
+<h3 align="center">A server-client chat interface for the LlaMA model.</h3>
+<p align="center">
 
 ## Overview
-
-This project provides a server-client chat interface using the LLaMA model. The server is built in Python using Flask and communicates with a client that can be used in other systems. The project is designed to handle and manage conversations, sending requests to the LLaMA model for responses.
+This project provides a server-client chat interface utilizing the LLaMA model. The server, built in Python using Flask, communicates with a client that can be integrated into other systems. The project is designed to manage and handle conversations, sending requests to the LLaMA model for responses. The main objective is to create a solution for running the model on a local server and connecting it to a user-friendly client interface.
 
 ## Features
 
@@ -64,5 +69,5 @@ All clients will prompt the server_ip.
   cd Client
   python client.py
 ```
-Enter server_ip to connect
-**Session_id**: Refers to the conversation id used to track history.
+- **Server_ip**: IP used to connect to the main host server
+- **Session_id**: The `session_id` is a unique identifier that keeps each conversation separate, allowing the AI to remember and continue specific chats without mixing them up. This can be any unique combination chosen by you.
