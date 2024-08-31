@@ -1,4 +1,4 @@
-# LLaMA Bridge Chat Interface
+# LlamaBridge
 
 ## Overview
 
