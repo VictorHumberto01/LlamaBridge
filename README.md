@@ -49,7 +49,7 @@ This project provides a server-client chat interface using the LLaMA model. The 
   ollama serve
   ```
 
-3. **Start the Server**:
+2. **Start the Server**:
     Run the server using the following command:
     ```bash
     python server.py
