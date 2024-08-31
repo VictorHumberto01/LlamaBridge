@@ -13,7 +13,7 @@ This project provides a server-client chat interface utilizing the LLaMA model. 
 
 - **Swift Client**: A native swift client can be run in MacOS.
 - **Python Client**: A client written in Python to handle other systems while native clients are being developed.
-- **Flask Server**: The server is built with Flask and requires JSON handling capabilities.
+- **Flask Server**: The server is built with Flask and requires JSON handling capabilities. **Note that the server script is still in development and it's not ready to daily use**
 - **Conversation Management**: The client handles session-based conversations, ensuring each session's history is preserved.
 - **Ollama Integration**: The server utilizes the Ollama library to communicate with the LLaMA model.
 
