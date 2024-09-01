@@ -50,9 +50,9 @@ This project provides a server-client chat interface utilizing the LLaMA model. 
 ### Running the Server
 
 1. **Run Ollama api**:
-  ```bash
-  ollama serve
-  ```
+   ```bash
+      ollama serve
+    ```
 
 2. **Start the Server**:
     Run the server using the following command:
